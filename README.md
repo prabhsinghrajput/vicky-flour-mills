@@ -41,7 +41,7 @@ The mill combines traditional milling practices with modern technology to ensure
 
 vicky-flour-mills/
 │
-├── index.html
-├── images/
+|--index.html
+|-- images/
 │ └── VFM.png
 └── README.md
