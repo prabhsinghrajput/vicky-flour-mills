@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vicky Flour Mills</title>
+  <link rel="icon" type="image/svg+xml" 
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-size='80'%3E🌾%3C/text%3E
+      %3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+  .slider-container {
+    scroll-behavior: smooth;
+    }
+</style>
+
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <!-- Navbar -->
+<nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <a href="#" class="flex items-center text-yellow-800 font-bold text-xl">
+      🌾 Vicky Flour Mills
+    </a>
+
+    <!-- Hamburger Button (visible on mobile) -->
+    <button id="menu-btn" class="block md:hidden text-yellow-800 focus:outline-none text-2xl">
+      ☰
+    </button>
+
+    <!-- Menu Items -->
+    <ul id="menu" class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <li><a href="#home" class="hover:text-yellow-700">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-700">About</a></li>
+      <li><a href="#products" class="hover:text-yellow-700">Products</a></li>
+      <li><a href="#quality" class="hover:text-yellow-700">Our Quality</a></li>
+      <li><a href="#business-info" class="hover:text-yellow-700">Business Info</a></li>
+      <li><a href="#reviews" class="hover:text-yellow-700">What Customers Say</a></li>
+      <li><a href="#review" class="hover:text-yellow-700">Review</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <ul class="flex flex-col space-y-4 py-4 text-center font-medium text-gray-700">
+      <li><a href="#home" class="hover:text-yellow-700">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-700">About</a></li>
+      <li><a href="#products" class="hover:text-yellow-700">Products</a></li>
+      <li><a href="#quality" class="hover:text-yellow-700">Our Quality</a></li>
+      <li><a href="#business-info" class="hover:text-yellow-700">Business Info</a></li>
+      <li><a href="#reviews" class="hover:text-yellow-700">What Customers Say</a></li>
+      <li><a href="#review" class="hover:text-yellow-700">Contact US</a></li>
+    </ul>
+  </div>
+</nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home"
+    class="bg-yellow-100 py-20 md:py-32 text-center relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+      <h1
+        class="text-5xl md:text-7xl font-extrabold text-yellow-900 mb-6 leading-tight">
+        Freshly Milled, <span class="text-yellow-700">Perfectly Pure.</span>
+      </h1>
+      <p
+        class="text-xl md:text-2xl text-yellow-800 max-w-3xl mx-auto mb-10">
+        Bringing the finest wheat flour from our fields to your kitchen,
+        ensuring health and taste in every bite.
+      </p>
+      <a href="#products"
+        class="bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 text-lg">
+        Explore Our Products
+      </a>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-br from-yellow-100 to-yellow-200 opacity-75"></div>
+  </section>
+
+  <!-- About -->
+<section id="about" class="section-padding bg-white">
+  <div class="container mx-auto px-6 lg:flex items-center gap-12">
+    <div class="lg:w-1/2 mb-8 lg:mb-0">
+      <img src="images/VFM.png"
+        alt="Flour Mill Interior"
+        class="rounded-xl shadow-lg w-full h-auto object-cover border border-yellow-200">
+    </div>
+    <div class="lg:w-1/2">
+      <h2 class="text-4xl font-bold text-yellow-800 mb-6">🌾 About Vicky Flour Mills</h2>
+      
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        At <strong>Vicky Flour Mills</strong>, we bring you flour that is <strong>fresh, pure, and full of nutrition</strong>.  
+        With over <strong>30 years of experience</strong>, we combine traditional methods with modern technology to deliver flour you can trust.
+      </p>
+
+      <ul class="list-none space-y-2 text-lg text-gray-700 leading-relaxed mb-6">
+        <li>✅ <strong>Pure & Natural</strong> – No chemicals, preservatives, or additives.</li>
+        <li>🚜 <strong>Direct from Farmers</strong> – We work with trusted farmers to source the best grains.</li>
+        <li>⚙️ <strong>Advanced Milling</strong> – Modern machines ensure consistency and hygiene.</li>
+        <li>🛡 <strong>Strict Quality Checks</strong> – Every batch is tested for freshness and purity.</li>
+        <li>🏠 <strong>Trusted by Families & Businesses</strong> – From homemakers to restaurants, thousands rely on us daily.</li>
+      </ul>
+
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        Our flours are loved for making <strong>soft rotis, healthy multigrain breads, crispy snacks, and delicious baked goods</strong>.
+      </p>
+
+      <p class="text-lg text-gray-700 leading-relaxed">
+        As we grow, our vision is simple: to bring <strong>healthy, premium-quality flour</strong> to every kitchen, while staying true to our values of <strong>honesty, quality, and care</strong>.
+      </p>
+    </div>
+  </div>
+</section><br>
+
+<!-- Products -->
+<section id="products" class="section-padding bg-yellow-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-yellow-800 mb-12">
+      Our Premium Flour Products
+    </h2>
+
+    <!-- Slider for mobile -->
+    <div id="productsSlider" 
+         class="flex gap-6 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-3 sm:gap-8 sm:overflow-visible pb-4 slider-container">
+      
+      <!-- Whole Wheat Atta -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-6 rounded-xl shadow-md border border-yellow-100 snap-center">
+        <span class="text-6xl mb-4 block">📦</span>
+        <h3 class="text-xl md:text-2xl font-semibold text-yellow-700 mb-3">Whole Wheat Atta</h3>
+        <p class="text-gray-600 mb-4">
+          100% whole wheat flour, perfect for soft rotis and breads. Rich in fiber and nutrients.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <span class="relative px-4 py-2 bg-yellow-50 text-yellow-800 font-medium rounded-full border">
+            10kg – ₹320
+            <span class="absolute -top-2 right-2 text-[10px] bg-yellow-400 text-white px-2 py-0.5 rounded-full shadow">
+              ⭐ Best Value
+            </span>
+          </span>
+          <span class="px-4 py-2 bg-yellow-50 text-yellow-800 font-medium rounded-full border">
+            20kg – ₹640
+          </span>
+          <span class="px-4 py-2 bg-yellow-50 text-yellow-800 font-medium rounded-full border">
+            40kg – ₹1280
+          </span>
+        </div>
+        <p class="mt-3 text-xs text-gray-500">~ ₹32/kg</p>
+      </div>
+
+      <!-- Multi-Grain Flour -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-6 rounded-xl shadow-md border border-yellow-100 snap-center">
+        <span class="text-6xl mb-4 block">🍞</span>
+        <h3 class="text-xl md:text-2xl font-semibold text-yellow-700 mb-3">Multi-Grain Flour</h3>
+        <p class="text-gray-600 mb-4">
+          Nutritious blend of wheat, barley, oats, and more. Great for breads and pancakes.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <span class="relative px-4 py-2 bg-green-50 text-green-800 font-medium rounded-full border">
+            5kg – ₹300
+            <span class="absolute -top-2 right-2 text-[10px] bg-green-500 text-white px-2 py-0.5 rounded-full shadow">
+              ⭐ Best Value
+            </span>
+          </span>
+          <span class="px-4 py-2 bg-green-50 text-green-800 font-medium rounded-full border">
+            10kg – ₹600
+          </span>
+          <span class="px-4 py-2 bg-green-50 text-green-800 font-medium rounded-full border">
+            20kg – ₹1200
+          </span>
+        </div>
+        <p class="mt-3 text-xs text-gray-500">~ ₹60/kg</p>
+      </div>
+
+      <!-- Fine Maida -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-6 rounded-xl shadow-md border border-yellow-100 snap-center">
+        <span class="text-6xl mb-4 block">🥖</span>
+        <h3 class="text-xl md:text-2xl font-semibold text-yellow-700 mb-3">Fine Maida (All-Purpose)</h3>
+        <p class="text-gray-600 mb-4">
+          Premium refined flour for cakes, pastries, cookies, and fried items.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <span class="relative px-4 py-2 bg-blue-50 text-blue-800 font-medium rounded-full border">
+            5kg – ₹200
+            <span class="absolute -top-2 right-2 text-[10px] bg-blue-500 text-white px-2 py-0.5 rounded-full shadow">
+              ⭐ Best Value
+            </span>
+          </span>
+          <span class="px-4 py-2 bg-blue-50 text-blue-800 font-medium rounded-full border">
+            10kg – ₹400
+          </span>
+          <span class="px-4 py-2 bg-blue-50 text-blue-800 font-medium rounded-full border">
+            20kg – ₹800
+          </span>
+        </div>
+        <p class="mt-3 text-xs text-gray-500">~ ₹40/kg</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Quality -->
+<section id="quality" class="py-20 bg-gradient-to-b from-white to-yellow-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-extrabold text-yellow-800 mb-16 tracking-wide">
+      Our Commitment to Quality
+    </h2>
+
+    <!-- Slider for mobile -->
+    <div id="qualitySlider" 
+         class="flex gap-6 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-3 sm:gap-10 sm:overflow-visible pb-4 slider-container">
+
+      <!-- Card 1 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-10 rounded-2xl shadow-md border border-yellow-100 snap-center">
+        <div class="text-6xl mb-4">🍃</div>
+        <h3 class="text-xl font-semibold text-yellow-700 mb-3">Finest Sourcing</h3>
+        <p class="text-gray-600 text-sm">We carefully select only the best quality wheat grains for superior flour.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-10 rounded-2xl shadow-md border border-yellow-100 snap-center">
+        <div class="text-6xl mb-4">⚙️</div>
+        <h3 class="text-xl font-semibold text-yellow-700 mb-3">Advanced Milling</h3>
+        <p class="text-gray-600 text-sm">Our state-of-the-art milling ensures consistent texture and nutrition.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-10 rounded-2xl shadow-md border border-yellow-100 snap-center">
+        <div class="text-6xl mb-4">✨</div>
+        <h3 class="text-xl font-semibold text-yellow-700 mb-3">Strict Quality Control</h3>
+        <p class="text-gray-600 text-sm">Every batch undergoes rigorous testing to maintain top-notch standards.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Business Info -->
+<section id="business-info" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-extrabold text-yellow-800 mb-16 tracking-wide">
+      Business Information
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+
+      <!-- About Section -->
+      <div class="bg-white p-10 rounded-2xl shadow-md border border-yellow-100 
+                  hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold text-yellow-700 mb-6">
+          About Vicky Flour Mills
+        </h3>
+        <ul class="space-y-4 text-gray-700">
+          <li>📅 <strong>Established:</strong> Since 1995 (30+ years in operation)</li>
+          <li>👥 <strong>Workforce:</strong> 20+ employees including Managers, Supervisors & Skilled Workers</li>
+          <li>🏭 <strong>Business Type:</strong> Registered, family-owned flour milling business</li>
+        </ul>
+      </div>
+
+      <!-- Ownership & Contact -->
+      <div class="bg-white p-10 rounded-2xl shadow-md border border-yellow-100 
+                  hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold text-yellow-700 mb-6">
+          Ownership & Contact
+        </h3>
+        <ul class="space-y-4 text-gray-700">
+          <li>👤 <strong>Owner:</strong> Mr. Vivek Kapoor</li>
+          <li>📍 <strong>Location:</strong> Vicky Flour Mill, Opp. Chitti Colony, Bhattian Bet, Ludhiana</li>
+          <li>📞 <strong>Phone:</strong> <a href="tel:+919876085736" class="text-yellow-700 hover:underline">+91 98760 85736</a></li>
+          <li>✉️ <strong>Email:</strong> <a href="mailto:kapoorvivek1975@gmail.com" class="text-yellow-700 hover:underline">kapoorvivek1975@gmail.com</a></li>
+          <li>🧾 <strong>GSTIN:</strong> 03APSPK8834P1Z1</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Customer Reviews -->
+<section id="reviews" class="py-20 bg-gradient-to-b from-white to-yellow-50">
+  <div class="container mx-auto px-6 text-center relative">
+    <h2 class="text-4xl font-extrabold text-yellow-800 mb-12 tracking-wide">
+      What Our Customers Say
+    </h2>
+
+    <!-- Slider for mobile -->
+    <div id="reviewsSlider" 
+         class="flex gap-6 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-3 sm:gap-10 sm:overflow-visible pb-4 slider-container">
+
+      <!-- Review 1 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-8 rounded-2xl shadow-md border border-yellow-100 snap-center relative">
+        <span class="absolute -top-4 left-6 text-4xl text-yellow-400">❝</span>
+        <p class="italic text-gray-700 mb-6 mt-4">The wheat atta from Vicky Flour Mills makes the softest rotis! Pure quality you can taste.</p>
+        <div class="flex justify-center mb-3 text-yellow-500">⭐⭐⭐⭐⭐</div>
+        <h4 class="font-semibold text-yellow-700">Ramesh Kumar</h4>
+        <p class="text-sm text-gray-500">Local Shopkeeper</p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-8 rounded-2xl shadow-md border border-yellow-100 snap-center relative">
+        <span class="absolute -top-4 left-6 text-4xl text-yellow-400">❝</span>
+        <p class="italic text-gray-700 mb-6 mt-4">We’ve been buying from them for years. Consistent quality and timely delivery always.</p>
+        <div class="flex justify-center mb-3 text-yellow-500">⭐⭐⭐⭐⭐</div>
+        <h4 class="font-semibold text-yellow-700">Suman Sharma</h4>
+        <p class="text-sm text-gray-500">Homemaker</p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="min-w-[80%] sm:min-w-0 bg-white p-8 rounded-2xl shadow-md border border-yellow-100 snap-center relative">
+        <span class="absolute -top-4 left-6 text-4xl text-yellow-400">❝</span>
+        <p class="italic text-gray-700 mb-6 mt-4">Best flour mill in Ludhiana! Their multigrain atta is very healthy and tasty.</p>
+        <div class="flex justify-center mb-3 text-yellow-500">⭐⭐⭐⭐⭐</div>
+        <h4 class="font-semibold text-yellow-700">Harpreet Singh</h4>
+        <p class="text-sm text-gray-500">Restaurant Owner</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Leave a Review Form (Google Sheets Integration) -->
+<section id="Reviews" class="section-padding bg-yellow-100">
+  <div class="container mx-auto px-6 text-center lg:text-left">
+    <h2 class="text-4xl font-bold text-yellow-800 mb-12">Leave a Message</h2>
+    <div class="lg:flex gap-12">
+
+      <!-- Instructions -->
+      <div class="lg:w-1/2 mb-10">
+        <p class="text-lg text-yellow-800 mb-6">
+          Share your experience with Vicky Flour Mills. Your feedback helps us serve you better!
+        </p>
+      </div>
+
+      <!-- Review Form -->
+      <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-lg border border-yellow-200">
+        <form id="reviewForm" 
+              action="https://script.google.com/macros/s/AKfycbzPtNMqA3CKZsrvfdBxpbGKGidFPmbQCFsyyT7mnGJIXNWQFNBmc1U4j09UaDiQdGWIxQ/exec" 
+              method="POST" 
+              target="hidden_iframe" 
+              class="space-y-6">
+          <input type="text" name="name" placeholder="Your Name" required
+                 class="w-full p-3 border rounded-md">
+          <input type="email" name="email" placeholder="your@example.com" required
+                 class="w-full p-3 border rounded-md">
+          <textarea name="message" rows="5" placeholder="Write your message..." required
+                    class="w-full p-3 border rounded-md"></textarea>
+          <button type="submit"
+                  class="w-full bg-yellow-700 hover:bg-yellow-800 text-white py-3 rounded-md">
+            Submit Message
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <p id="reviewSuccess" class="hidden mt-4 text-green-600 font-semibold">
+          ✅ Thank you! Your message has been submitted.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden iframe to bypass CORS -->
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Vicky Flour Mills. All rights reserved.</p>
+  </footer>
+
+
+<script>
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+
+  //For sliders
+  function enableAutoSlide(id) {
+  const slider = document.getElementById(id);
+  if (!slider) return;
+
+  let scrollAmount = 0;
+  const slideStep = slider.clientWidth * 0.9;
+  const totalScroll = slider.scrollWidth - slider.clientWidth;
+
+  setInterval(() => {
+    if (scrollAmount >= totalScroll) {
+      scrollAmount = 0;
+    } else {
+      scrollAmount += slideStep;
+    }
+    slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+  }, 3000);
+}
+
+// Enable only on mobile
+if (window.innerWidth < 768) {
+  enableAutoSlide("productsSlider");
+  enableAutoSlide("qualitySlider");
+  enableAutoSlide("reviewsSlider");
+}
+
+  
+  // Show success message after form submission
+  const reviewForm = document.getElementById("reviewForm");
+  reviewForm.addEventListener("submit", function () {
+    setTimeout(() => {
+      const successMsg = document.getElementById("reviewSuccess");
+      successMsg.classList.remove("hidden");
+      reviewForm.reset();
+
+      // Hide the success message after 2 seconds
+      setTimeout(() => {
+        successMsg.classList.add("hidden");
+      }, 2000);
+    }, 500);
+  });
+</script>
+
+
+
+</body>
+
+</html>
