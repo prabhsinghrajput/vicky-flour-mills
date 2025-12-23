@@ -45,3 +45,13 @@ vicky-flour-mills/
 |-- images/
 │ └── VFM.png
 └── README.md
+
+## 📜 License
+
+This project is created for **business and educational purposes**.  
+All rights reserved © 2025 Vicky Flour Mills.
+
+---
+
+### 👨‍💻 Developed By
+**Prabhjot Singh**  
